@@ -54,7 +54,6 @@ const getdata = () => {
 const animationTimeline = () => {
   const textBoxChars = document.querySelector(".hbd-chatbox");
   const hbd = document.querySelector(".wish-hbd");
-  animationend = false
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
@@ -100,7 +99,6 @@ const animationTimeline = () => {
     .to(".idea-4", 0.7, { ...fadeOut }, "+=1.5")
     .from(".idea-5", 0.7, { ...fadeIn }, "+=0.5")
     .to(".idea-5", 0.7, { ...fadeOut }, "+=2")
-    .call(startConfetti)
     .staggerFrom(".idea-6 span", 10, { ...fadeIn }, 7)
     .staggerTo(".idea-6 span", 2.5, { ...fadeOut }, 3, "+=1")
     .from(".lydia-dp", 0.5, { ...fadeIn }, "-=2")
@@ -118,9 +116,3 @@ const animationTimeline = () => {
 };
 
 getdata();
-
-function startConfetti() {
-  const script = document.createElement('script');
-  script.src = "./src/confetti.js";
-  document.body.appendChild(script);
-}
