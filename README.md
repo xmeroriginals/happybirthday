@@ -1,3 +1,3 @@
 # Happy Birthday
-### *Original Project by "**faahim**" https://github.com/faahim*
+*Original Project by "**faahim**" https://github.com/faahim*
 Edited by **XmerOriginals**
