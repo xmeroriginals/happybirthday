@@ -62,6 +62,7 @@ const animationTimeline = () => {
 
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
+    .map(char => char === " " ? "&nbsp;" : char)
     .join("</span><span>")}</span>`;
 
   const fadeIn = { autoAlpha: 0 };
